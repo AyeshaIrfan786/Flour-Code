@@ -1,0 +1,359 @@
+/* Style for about page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #F4EDF1;
+    font-family: 'Poppins', sans-serif;
+    color: #2b2b2b;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #E97AB0;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* NAV LINKS */
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.cart {
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    padding: 4px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    width: 160px;
+    font-size: 14px;
+}
+
+.search-box button {
+    border: none;
+    background-color: #E97AB0;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.mission{
+    font-family: 'Playfair Display', serif;
+    background: #f7eef3;
+    padding: 60px;
+    text-align: center;
+}
+
+.mission h2{
+    margin-bottom: 40px;
+}
+
+.mission-cards{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card{
+    font-family: 'Playfair Display', serif;
+    background: #fff;
+    padding: 25px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card i{
+    font-size: 28px;
+    color: #e86db1;
+    margin-bottom: 10px;
+}
+
+
+
+.about-hero{
+    font-family: 'Playfair Display', serif;
+    background: #f7eef3;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-hero h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.about-hero p{
+    color: #777;
+    font-size: 15px;
+}
+
+
+
+.our-story{
+    padding: 70px 80px;
+}
+
+.story-container{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.story-img img{
+    width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.story-text h2{
+    margin-bottom: 15px;
+}
+
+.story-text p{
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+
+
+
+.team{
+    font-family: 'Playfair Display', serif;
+    padding: 60px;
+    text-align: center;
+}
+
+.team-cards{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.team-card{
+    background: #fff;
+    width: 220px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.avatar{
+    background: #f2e7ee;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+.role{
+    color: #e86db1;
+    font-size: 14px;
+}
+
+
+
+.why{
+    background: #f7eef3;
+    padding: 60px;
+    text-align: center;
+}
+
+.why-list{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 700px;
+    margin-inline: auto;
+}
+
+.why-list i{
+    color: #e86db1;
+   
+}
+
+
+.newsletter{
+    font-family: 'Playfair Display', serif;
+    background: #f7eef3;
+    padding: 70px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-box{
+    background: #fff;
+    padding: 45px;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.newsletter-box h2{
+    margin-bottom: 12px;
+}
+
+.newsletter-box p{
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.newsletter-form{
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.newsletter-form input{
+
+    padding: 12px 15px;
+    width: 60%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+.newsletter-form button{
+    padding: 12px 22px;
+    background: #e86db1;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover{
+    background: #d4559e;
+}
+
+.note{
+    font-size: 13px;
+    color: #888;
+}
+
+
+.footer {
+  background: #1f1f1f;
+  color: #ddd;
+  padding: 40px 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer .container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a,
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a:hover,
+.footer-links a:hover {
+  color: #ffb703;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.created-by {
+  margin-top: 5px;
+  color: #aaa;
+}
+
+
+.socials a{
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
