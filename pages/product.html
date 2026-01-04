@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Products - Flour & Code Bakery</title>
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        <div class="logo-icon">F&C</div>
+        <span>Flour & Code</span>
+    </div>
+
+    
+    <div class="search-box">
+        <input type="text" placeholder="Search">
+        <button><i class="fas fa-search"></i></button>
+    </div>
+
+    <nav class="nav-links">
+    
+            <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+         <a href="product.html">Menu</a>
+        
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="#">My Cart</div>
+    <div class="cart-display">
+      My Cart (<span id="cart-count">0</span>)
+
+</header>
+  <section class="page-header">
+    <div class="container">
+      <h1>Our Products</h1>
+      <p>Discover our complete selection of freshly baked goods</p>
+    </div>
+  </section>
+  
+  <section class="products-section">
+    <div class="container">
+  
+
+      
+      <div class="filter-buttons">
+        <button class="btn-filter active" onclick="filterProducts('All')">All</button>
+        <button class="btn-filter" onclick="filterProducts('Pastries')">Pastries</button>
+        <button class="btn-filter" onclick="filterProducts('Bread')">Bread</button>
+        <button class="btn-filter" onclick="filterProducts('Cakes')">Cakes</button>
+      </div>
+
+      <div class="editorial-intro">
+  <h2>Fresh from Our Oven</h2>
+  <p>
+    Every morning at Flour & Code, our bakers begin before sunrise — folding,
+    proofing, and baking by hand. From flaky pastries to artisan breads, each
+    item reflects tradition, patience, and craftsmanship.
+  </p>
+</div>
+
+      <div class="grid grid-4">
+   
+        <div class="product-card">
+          <div class="product-image">
+            <img src="pic1.png" alt="Croissants">
+            <button class="favorite-btn" data-product-id="1">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Pastries</div>
+            <div class="product-name">Croissants</div>
+            <div class="product-description">Buttery, flaky croissants with layers of pure indulgence</div>
+            <div class="product-footer">
+              <div class="product-price">$4.50</div>
+              <button class="add-to-cart" data-product-id="1" data-product-name="Croissants">Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="pic2.png" alt="Croissants">
+            <button class="favorite-btn" data-product-id="1">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Pastries</div>
+            <div class="product-name">Croissants</div>
+            <div class="product-description">Buttery, flaky croissants with layers of pure indulgence</div>
+            <div class="product-footer">
+              <div class="product-price">$4.50</div>
+              <button class="add-to-cart" data-product-id="1" data-product-name="Croissants">Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="pic3.png" alt="Croissants">
+            <button class="favorite-btn" data-product-id="1">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Pastries</div>
+            <div class="product-name">Croissants</div>
+            <div class="product-description">Buttery, flaky croissants with layers of pure indulgence</div>
+            <div class="product-footer">
+              <div class="product-price">$4.50</div>
+              <button class="add-to-cart" data-product-id="1" data-product-name="Croissants">Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="pic6.png" alt="Croissants">
+            <button class="favorite-btn" data-product-id="1">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Pastries</div>
+            <div class="product-name">Croissants</div>
+            <div class="product-description">Buttery, flaky croissants with layers of pure indulgence</div>
+            <div class="product-footer">
+              <div class="product-price">$4.50</div>
+              <button class="add-to-cart" data-product-id="1" data-product-name="Croissants">Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="pic4.png" alt="Croissants">
+            <button class="favorite-btn" data-product-id="1">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Pastries</div>
+            <div class="product-name">Croissants</div>
+            <div class="product-description">Buttery, flaky croissants with layers of pure indulgence</div>
+            <div class="product-footer">
+              <div class="product-price">$4.50</div>
+              <button class="add-to-cart" data-product-id="1" data-product-name="Croissants">Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="pic8.png" alt="French Pastries">
+            <button class="favorite-btn" data-product-id="2">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Pastries</div>
+            <div class="product-name">French Pastries</div>
+            <div class="product-description">Delicate éclairs, tarts, and cream puffs</div>
+            <div class="product-footer">
+              <div class="product-price">$5.99</div>
+              <button class="add-to-cart" data-product-id="2" data-product-name="French Pastries">Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="pic7.png" alt="Artisan Bread">
+            <button class="favorite-btn" data-product-id="3">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Bread</div>
+            <div class="product-name">Artisan Bread</div>
+            <div class="product-description">Rustic sourdough and specialty grain loaves</div>
+            <div class="product-footer">
+              <div class="product-price">$6.99</div>
+              <button class="add-to-cart" data-product-id="3" data-product-name="Artisan Bread">Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="pic5.webp" alt="Custom Cakes">
+            <button class="favorite-btn" data-product-id="4">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Cakes</div>
+            <div class="product-name">Custom Cakes</div>
+            <div class="product-description">Personalized celebration cakes for your special moments</div>
+            <div class="product-footer">
+              <div class="product-price">From $35</div>
+              <button class="add-to-cart" data-product-id="4" data-product-name="Custom Cakes">Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="pic4.png" alt="Chocolate Croissants">
+            <button class="favorite-btn" data-product-id="5">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Pastries</div>
+            <div class="product-name">Chocolate Croissants</div>
+            <div class="product-description">Rich chocolate-filled croissants, perfect for breakfast</div>
+            <div class="product-footer">
+              <div class="product-price">$5.00</div>
+              <button class="add-to-cart" data-product-id="5" data-product-name="Chocolate Croissants">Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="pic3.png" alt="Whole Wheat Bread">
+            <button class="favorite-btn" data-product-id="6">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Bread</div>
+            <div class="product-name">Whole Wheat Bread</div>
+            <div class="product-description">Nutritious whole wheat loaf with seeds</div>
+            <div class="product-footer">
+              <div class="product-price">$7.50</div>
+              <button class="add-to-cart" data-product-id="6" data-product-name="Whole Wheat Bread">Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="pic2.png" alt="Berry Tart">
+            <button class="favorite-btn" data-product-id="7">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Pastries</div>
+            <div class="product-name">Berry Tart</div>
+            <div class="product-description">Fresh berries on creamy custard base</div>
+            <div class="product-footer">
+              <div class="product-price">$6.50</div>
+              <button class="add-to-cart" data-product-id="7" data-product-name="Berry Tart">Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="pic1.png" alt="Wedding Cake">
+            <button class="favorite-btn" data-product-id="8">♡</button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Cakes</div>
+            <div class="product-name">Wedding Cake</div>
+            <div class="product-description">Elegant multi-tier wedding cakes, fully customizable</div>
+            <div class="product-footer">
+              <div class="product-price">From $150</div>
+              <button class="add-to-cart" data-product-id="8" data-product-name="Wedding Cake">Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-grid">
+
+     
+      <div class="footer-section">
+        <h3>Flour & Code Bakery</h3>
+        <p>
+          Flour & Code Bakery blends traditional baking with modern creativity,
+          delivering fresh, handcrafted treats made with love and quality ingredients.
+        </p>
+      </div>
+
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+     
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Email: info@flourandcode.com</p>
+        <p>Phone: +92 300 1234567</p>
+        <p>Location: Pakistan</p>
+      </div>
+
+     
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="footer-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+
+    </div>
+
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Flour & Code Bakery. All rights reserved.</p>
+      <p class="created-by">
+        Created by <strong>Ayesha</strong> <strong>Irfan</strong>, <strong>Amna</strong>
+        <strong>Nadeem</strong>, <strong>Maryum</strong> <strong>Zahra</strong>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<script src="script.js"></script> 
+
+</body>
+</html>
