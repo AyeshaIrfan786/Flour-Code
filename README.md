@@ -51,6 +51,17 @@ Amna Nadeem
 
 Maryum Zahra
 
+## 🌐 Website Sections
+
+- Home Page  
+- About Page  
+- Product Collection Page  
+- Contact Page  
+- Navigation bar with search and cart icon  
+- Footer with links and contact information
+
+- 
+
 📁 Project Structure
 /flour-and-code-bakery
 │
