@@ -55,21 +55,45 @@ Maryum Zahra
 /flour-and-code-bakery
 │
 ├── index.html          # Home Page
+
+
 ├── about.html          # About Us Page (implied by links)
+
+
 ├── product.html        # Menu/Product Page
+
+
 ├── contact.html        # Contact Us Page
+
+
 │
 ├── style.css           # Styles for Home Page
+
+
 ├── about.css           # Styles for About Page
 ├── product.css         # Styles for Product Page
+
+
 ├── contact.css         # Styles for Contact Page
+
+
 │
 ├── script.js           # JavaScript for cart and filtering
+
+
 │
 └── /images             # Folder for all image files
+
+
     ├── intro.png.webp  # Hero image
+
+    
     ├── pic1.png        # Product images
+
+    
     ├── pic2.png        # Product images
+
+    
     └── ... (pic3.png - pic8.png)
 📄 Note
 
