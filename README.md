@@ -1,4 +1,6 @@
 ICT FINAL PROJECT
+
+
 🍰 Flour & Code – Bakery Website
 
 Flour & Code is a modern bakery website designed to showcase delicious baked goods through a clean, user-friendly interface. The website blends creativity and code to represent a digital bakery experience where design meets functionality.
@@ -50,14 +52,25 @@ Amna Nadeem
 Maryum Zahra
 
 📁 Project Structure
-Flour-and-Code/
+/flour-and-code-bakery
 │
-├── index.html
-├── style.css
-├── images/
-│   └── bakery-images
-└── README.md
-
+├── index.html          # Home Page
+├── about.html          # About Us Page (implied by links)
+├── product.html        # Menu/Product Page
+├── contact.html        # Contact Us Page
+│
+├── style.css           # Styles for Home Page
+├── about.css           # Styles for About Page
+├── product.css         # Styles for Product Page
+├── contact.css         # Styles for Contact Page
+│
+├── script.js           # JavaScript for cart and filtering
+│
+└── /images             # Folder for all image files
+    ├── intro.png.webp  # Hero image
+    ├── pic1.png        # Product images
+    ├── pic2.png        # Product images
+    └── ... (pic3.png - pic8.png)
 📄 Note
 
 This project is created for educational purposes only as part of an ICT final project submission.
